@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let tempFahrenheit = -90;
+        // let tempCelsius = Math.round((tempFahrenheit - 32) * 5/9);
+        // let tempKelvin = Math.round((tempCelsius + 273.15));
+        // let todaysForecast = `The current temperature outside is ${tempFahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celsius, and ${tempKelvin} degrees Kelvin.`;
+        // console.log(todaysForecast);
+        function Tempconversions(tempFahrenheit) {
+        let tempCelsius = Math.floor((tempFahrenheit - 32) * 5/9);
+        let tempKelvin = Math.floor((tempCelsius + 273.15));
+        let conversion = `The current temperature outside is ${tempFahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celcius, and ${tempKelvin} degrees Kelvin`;
+        console.log(conversion);
+    }
+    Tempconversions(tempFahrenheit);
+    // end temp conversion here
+    // start personalized greeting here
+    const firstName = 'Steven';
+    const lastName = 'Parks';
+    let age = 31;
+    const city = 'Los Angeles';
+    console.log(`Hello! My Name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city.toUpperCase()}. It's nice to meet you!`);
+    const initials = [firstName.charAt(0), lastName.charAt(0)]
+    console.log(initials);
+    const nameLength = firstName.length;
+    console.log(nameLength);
+    console.log(`${firstName.toUpperCase()} ${lastName.toUpperCase()} the car.`);
+    function sayGreeting(firstName, lastName, age, city) {
+        console.log(`Hello! My name is ${firstName} ${lastName}. I’m ${age} years old, and Im from ${city}. Its nice to meet you!`);
+    }
+sayGreeting(firstName, lastName, age); //DISPLAY THIS IN CONSOLE IF NO CITY argument passed through: Hello! My name is Steven Parks. I’m 31 years old, and Im from undefined. Its nice to meet you!
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
